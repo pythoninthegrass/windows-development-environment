@@ -46,7 +46,7 @@ Once done, you can install packages by running `cinst` (short for `choco install
 Windows 10 comes with [OneGet](https://github.com/OneGet/oneget), a universal package manager that can use Chocolatey to find and install packages. To install, run:
 
 ```
-Get-PackageProvider -Name Chocolatey; Set-PackageSource -Name chocolatey
+Get-PackageProvider -Name Chocolatey; Set-PackageSource -Name chocolatey -Trusted -Verbose
 ```
 
 Once done, you can look for all Chrome packages by typing `Find-Package -Name Chrome` or install it by typing `Install-Package -Name GoogleChrome`.
