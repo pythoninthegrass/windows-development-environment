@@ -1,3 +1,7 @@
+## Boxstarter Automated script
+# Run in Powershell admin prompt:
+# START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/pythoninthegrass/windows-development-environment/master/boxstarter
+
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 
