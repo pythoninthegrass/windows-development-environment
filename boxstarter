@@ -11,19 +11,27 @@ cinst -y Gow
 
 ## Node, npm
 cinst -y nodejs.install
+npm install -g npm-windows-upgrade
+npm-windows-upgrade
+cinst -y phantomjs
 
 ## Git
-cinst -y git.install
+# cinst -y git.install
 cinst -y poshgit
 cinst -y git-credential-winstore
-cinst -y github
+# cinst -y github
 
 ## Node, npm
 cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
 ## Editors
+# cinst -y Atom
 cinst -y visualstudiocode
+# cinst -y SublimeText3
+# cinst -y sublimetext3-contextmenu
+# cinst -y SublimeText3.PackageControl
+# cinst -y SublimeText3.PowershellAlias
 
 ## Visual Studio 2015
 cinst -y visualstudio2015community
@@ -40,6 +48,19 @@ cinst -y pip
 cinst -y easy.install
 
 if (Test-PendingReboot) { Invoke-Reboot }
+
+## DevOps
+# Docker, VirtualBox, Vagrant
+# cinst -y virtualbox
+# cinst -y virtualbox.extensionpack
+# cinst -y vagrant
+
+# Azure CLI
+npm install -g azure-cli
+
+# AWS CLI
+cinst -y awscli
+cinst -y awstools.powershell
 
 ## Basics
 # cinst -y vlc
