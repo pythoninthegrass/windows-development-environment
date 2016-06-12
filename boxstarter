@@ -42,9 +42,9 @@ cinst -y easy.install
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
-cinst -y vlc
-cinst -y GoogleChrome
-cinst -y 7zip.install
+# cinst -y vlc
+# cinst -y GoogleChrome
+# cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
 # cinst -y DotNet4.0 -- not needed on windows 8
@@ -53,7 +53,7 @@ cinst -y DotNet3.5
 if (Test-PendingReboot) { Invoke-Reboot }
 
 # Pinning Things
-Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
+# Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 
 # Let's get Updates, too
 Install-WindowsUpdate -acceptEula
