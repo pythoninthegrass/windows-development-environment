@@ -7,7 +7,7 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 
 Update-ExecutionPolicy Unrestricted
 
-cinst -y Microsoft-Hyper-V-All -source windowsFeatures
+# cinst -y Microsoft-Hyper-V-All -source windowsFeatures # Disabled due to conflict with vagrant up
 
 # Packages
 cinst -y cmder -pre
@@ -21,8 +21,8 @@ cinst -y phantomjs
 
 ## Git
 # cinst -y git.install
-cinst -y poshgit
-cinst -y git-credential-winstore
+# cinst -y poshgit
+# cinst -y git-credential-winstore
 # cinst -y github
 
 ## Node, npm
