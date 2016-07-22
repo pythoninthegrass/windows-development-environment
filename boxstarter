@@ -77,6 +77,8 @@ cinst -y musicbee
 cinst -y steam
 cinst -y discord
 cinst -y skype
+cinst -y dropbox
+cinst -y googledrive
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
