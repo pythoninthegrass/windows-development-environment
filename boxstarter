@@ -30,8 +30,8 @@ cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
 ## Editors
-# cinst -y Atom
-cinst -y visualstudiocode
+cinst -y Atom
+# cinst -y visualstudiocode
 # cinst -y SublimeText3
 # cinst -y sublimetext3-contextmenu
 # cinst -y SublimeText3.PackageControl
@@ -55,9 +55,9 @@ if (Test-PendingReboot) { Invoke-Reboot }
 
 ## DevOps
 # Docker, VirtualBox, Vagrant
-# cinst -y virtualbox
-# cinst -y virtualbox.extensionpack
-# cinst -y vagrant
+cinst -y virtualbox
+cinst -y virtualbox.extensionpack
+cinst -y vagrant
 
 # Azure CLI
 npm install -g azure-cli
@@ -67,9 +67,16 @@ cinst -y awscli
 cinst -y awstools.powershell
 
 ## Basics
-# cinst -y vlc
-# cinst -y GoogleChrome
-# cinst -y 7zip.install
+cinst -y vlc
+cinst -y firefox
+cinst -y GoogleChrome
+cinst -y evernote
+cinst -y cmder
+cinst -y spotify
+cinst -y musicbee
+cinst -y steam
+cinst -y discord
+cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
 # cinst -y DotNet4.0 -- not needed on windows 8
