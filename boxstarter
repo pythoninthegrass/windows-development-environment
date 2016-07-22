@@ -38,8 +38,8 @@ cinst -y Atom
 # cinst -y SublimeText3.PowershellAlias
 
 ## Visual Studio 2015
-cinst -y visualstudio2015community
-if (Test-PendingReboot) { Invoke-Reboot }
+# cinst -y visualstudio2015community
+# if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Ruby, Go, Python
 cinst -y ruby
