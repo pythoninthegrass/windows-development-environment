@@ -4,7 +4,7 @@
 
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
-
+Enable-RemoteDesktop
 Update-ExecutionPolicy Unrestricted
 
 # cinst -y Microsoft-Hyper-V-All -source windowsFeatures # Disabled due to conflict with vagrant up
@@ -75,6 +75,7 @@ cinst -y spotify
 cinst -y musicbee
 cinst -y steam
 cinst -y discord
+cinst -y skype
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
