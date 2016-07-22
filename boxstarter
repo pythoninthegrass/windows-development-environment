@@ -10,7 +10,6 @@ Update-ExecutionPolicy Unrestricted
 # cinst -y Microsoft-Hyper-V-All -source windowsFeatures # Disabled due to conflict with vagrant up
 
 # Packages
-cinst -y cmder -pre
 cinst -y Gow
 
 ## Node, npm
@@ -71,7 +70,7 @@ cinst -y vlc
 cinst -y firefox
 cinst -y GoogleChrome
 cinst -y evernote
-cinst -y cmder
+cinst -y cmder -pre
 cinst -y spotify
 cinst -y musicbee
 cinst -y steam
