@@ -5,6 +5,7 @@
 # Configure Windows
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar
 Enable-RemoteDesktop
+Disable-UAC
 Update-ExecutionPolicy Unrestricted
 
 # cinst -y Microsoft-Hyper-V-All -source windowsFeatures # Disabled due to conflict with vagrant up
@@ -88,4 +89,5 @@ if (Test-PendingReboot) { Invoke-Reboot }
 # Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
 
 # Let's get Updates, too
+Enable-MicrosoftUpdate
 Install-WindowsUpdate -acceptEula
