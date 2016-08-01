@@ -23,7 +23,7 @@ cinst -y phantomjs
 # cinst -y git.install
 # cinst -y poshgit
 # cinst -y git-credential-winstore
-# cinst -y github
+cinst -y github # Github Desktop
 
 ## Node, npm
 cinst -y nodejs.install
