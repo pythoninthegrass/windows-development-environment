@@ -10,14 +10,42 @@ Update-ExecutionPolicy Unrestricted
 
 # cinst -y Microsoft-Hyper-V-All -source windowsFeatures # Disabled due to conflict with vagrant up
 
+## Basics
+cinst -y cmder -pre
+cinst -y postbox
+cinst -y firefox
+cinst -y GoogleChrome
+cinst -y telegram
+cinst -y musicbee
+cinst -y spotify
+cinst -y evernote
+cinst -y steam
+cinst -y discord
+cinst -y battle.net
+cinst -y vlc
+cinst -y skype
+cinst -y dropbox
+cinst -y googledrive
+cinst -y ccleaner
+cinst -y 7zip.install
+cinst -y sysinternals
+cinst -y DotNet3.5
+# cinst -y DotNet4.0 -- not needed on windows 8
+# cinst -y DotNet4.5 -- not needed on windows 10
+# cinst -y PowerShell -- not needed on windows 10
+if (Test-PendingReboot) { Invoke-Reboot }
+
+# Pinning Things
+# Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
+
 # Packages
 cinst -y Gow
 
 ## Node, npm
-cinst -y nodejs.install
-npm install -g npm-windows-upgrade
-npm-windows-upgrade
-cinst -y phantomjs
+# cinst -y nodejs.install
+# npm install -g npm-windows-upgrade
+# npm-windows-upgrade
+# cinst -y phantomjs
 
 ## Git
 # cinst -y git.install
@@ -26,8 +54,8 @@ cinst -y phantomjs
 cinst -y github # Github Desktop
 
 ## Node, npm
-cinst -y nodejs.install
-npm install -g npm-windows-upgrade
+# cinst -y nodejs.install
+# npm install -g npm-windows-upgrade
 
 ## Editors
 cinst -y Atom
@@ -42,53 +70,29 @@ cinst -y Atom
 # if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Ruby, Go, Python
-cinst -y ruby
-cinst -y ruby.devkit
+# cinst -y ruby
+# cinst -y ruby.devkit
 
-cinst -y golang
+# cinst -y golang
 
 cinst -y python
 cinst -y pip
-cinst -y easy.install
+# cinst -y easy.install
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## DevOps
 # Docker, VirtualBox, Vagrant
-cinst -y virtualbox
-cinst -y virtualbox.extensionpack
-cinst -y vagrant
+# cinst -y virtualbox
+# cinst -y virtualbox.extensionpack
+# cinst -y vagrant
 
 # Azure CLI
-npm install -g azure-cli
+# npm install -g azure-cli
 
 # AWS CLI
-cinst -y awscli
-cinst -y awstools.powershell
-
-## Basics
-cinst -y vlc
-cinst -y firefox
-cinst -y GoogleChrome
-cinst -y evernote
-cinst -y cmder -pre
-cinst -y spotify
-cinst -y musicbee
-cinst -y steam
-cinst -y discord
-cinst -y skype
-cinst -y dropbox
-cinst -y googledrive
-cinst -y 7zip.install
-cinst -y sysinternals
-cinst -y DotNet3.5
-# cinst -y DotNet4.0 -- not needed on windows 8
-# cinst -y DotNet4.5 -- not needed on windows 10
-# cinst -y PowerShell -- not needed on windows 10
-if (Test-PendingReboot) { Invoke-Reboot }
-
-# Pinning Things
-# Install-ChocolateyPinnedTaskBarItem "$env:programfiles\Google\Chrome\Application\chrome.exe"
+# cinst -y awscli
+# cinst -y awstools.powershell
 
 # Let's get Updates, too
 Enable-MicrosoftUpdate
